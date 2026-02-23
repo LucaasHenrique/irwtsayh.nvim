@@ -2,6 +2,8 @@
 
 A cyberpunk theme for Neovim with vibrant and futuristic colors. Inspired by the neon aesthetic of Night City.
 
+![irwtsayh](src/irwtsayh.png)
+
 ## Features
 
 - 🌈 Customized neon color palette
