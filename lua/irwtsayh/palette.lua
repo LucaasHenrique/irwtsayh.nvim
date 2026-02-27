@@ -18,4 +18,8 @@ M.colors = {
     green_david = "#81EC86",
 }
 
+function M.get()
+    return M.colors
+end 
+
 return M

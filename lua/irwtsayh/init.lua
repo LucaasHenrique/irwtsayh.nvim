@@ -1,9 +1,9 @@
 local M = {}
 
 function M.load()
-    vim.cmd("highlight clear")
+    vim.cmd("hi clear")
     
-    if vim.fn.exists("syntax on") then
+    if vim.fn.exists("syntax_on") then
         vim.cmd("syntax reset")
     end
 
@@ -11,6 +11,9 @@ function M.load()
     vim.g.colors_name = "irwtsayh"
 
     require("irwtsayh.highlights").load()
+    local colors = require("irwtsayh.palette").get()
+    require("irwtsayh.integrations.telescope").load(colors)
+    require("irwtsayh.integrations.neotree").load(colors)
 end
 
 return M
