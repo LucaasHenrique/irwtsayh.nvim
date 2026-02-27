@@ -1,9 +1,14 @@
-local palette = require("irwtsayh.palette").colors
+local palette = require("irwtsayh.palette").get()
 local set = vim.api.nvim_set_hl
 
 local M = {}
 
 function M.load()
+    
+    set(0, "LinerNr", {fg = palette.sandevistan_yellow})
+    set(0, "CursorLineNr", {fg = palette.sandevistan_yellow, bold = true})
+    set(0, "CursorLine", { bg = palette.comment})
+
     set(0, "String",        { fg = palette.neon })
     set(0, "Character",     { fg = palette.neon })
     set(0, "Number",        { fg = palette.sandevistan_yellow })
@@ -25,7 +30,7 @@ function M.load()
     set(0, "@namespace",          { fg = palette.neon })
 
     set(0, "@keyword",            { fg = palette.sandevistan_yellow, bold = true })
-    set(0, "@function",           { fg = palette.neon_david })
+    set(0, "@function",           { fg = palette.neon_david, bold = true })
     set(0, "@function.method",    { fg = palette.sandevistan_yellow })
 
     set(0, "@string",             { fg = palette.neon })
