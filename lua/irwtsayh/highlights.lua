@@ -4,8 +4,10 @@ local set = vim.api.nvim_set_hl
 local M = {}
 
 function M.load()
-    
-    set(0, "LinerNr", {fg = palette.sandevistan_yellow})
+    set(0, "Normal", { fg = palette.arasaka, bg = palette.deep_night}) 
+    set(0, "NormalFloat", { bg = palette.deep_night })
+
+    set(0, "LineNr", {fg = palette.line_purple})
     set(0, "CursorLineNr", {fg = palette.sandevistan_yellow, bold = true})
     set(0, "CursorLine", { bg = palette.comment})
 
@@ -23,8 +25,8 @@ function M.load()
     set(0, "Constant",      { fg = palette.arasaka, italic = true })
 
     -- Treesitter
-    set(0, "@variable",           { fg = palette.pink_lucy, italic = true })
-    set(0, "@variable.builtin",   { fg = palette.neon, italic = true })
+    set(0, "@variable",           { fg = palette.pink_lucy, italic = true, bold = true })
+    set(0, "@variable.builtin",   { fg = palette.neon, italic = true, bold = true })
     set(0, "@field",              { fg = palette.fg })
     set(0, "@property",           { fg = palette.fg })
     set(0, "@namespace",          { fg = palette.neon })
@@ -44,10 +46,9 @@ function M.load()
     set(0, "@boolean",            { fg = palette.arasaka, bold = true })
 
     set(0, "@operator",           { fg = palette.neon_david })
-    set(0, "@punctuation.bracket", { fg = palette.neon })
+    set(0, "@punctuation.bracket", { fg = palette.neon_david})
     set(0, "@punctuation.delimiter",{ fg = palette.neon })
-    set(0, "@constant.macro",     { fg = palette.arasaka, bold = true })   
-
+    set(0, "@constant.macro",     { fg = palette.arasaka, bold = true })
 end
 
 return M
