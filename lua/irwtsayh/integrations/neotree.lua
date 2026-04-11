@@ -5,34 +5,34 @@ function M.load(colors)
 
   set(0, "NeoTreeNormal", {
     fg = colors.fg,
-    bg = colors.night_deep,
+    bg = colors.deep_night,
   })
 
   set(0, "NeoTreeNormalNC", {
     fg = colors.fg,
-    bg = colors.night_deep,
+    bg = colors.deep_night,
   })
   set(0, "NeoTreeWinSeparator", {
     fg = colors.cyber_purple,
   })
   set(0, "NeoTreeDirectoryName", {
-    fg = colors.neon_lucy,
+    fg = colors.arasaka,
   })
 
   set(0, "NeoTreeDirectoryIcon", {
-    fg = colors.neon,
+    fg = colors.arasaka,
   })
   set(0, "NeoTreeCursorLine", {
     bg = colors.cursor_line,
   })
 
   set(0, "NeoTreeRootName", {
-    fg = colors.pink_lucy,
+    fg = colors.arasaka,
     bold = true,
   })
 
   set(0, "NeoTreeGitModified", {
-    fg = colors.alert,
+    fg = colors.sandevistan_yellow,
   })
 
   set(0, "NeoTreeGitAdded", {
@@ -40,8 +40,11 @@ function M.load(colors)
   })
 
   set(0, "NeoTreeGitDeleted", {
-    fg = colors.arasaka,
+    fg = colors.pink_lucy,
   })
+
+  set(0, "NeoTreeFileName", { fg = colors.neon_lucy })
+
 end
 
 return M
