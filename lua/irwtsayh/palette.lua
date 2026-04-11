@@ -4,7 +4,7 @@ M.colors = {
     fg = "#C5C5C5",
     pmenu = "#1A1A2E",
     cursor_line = "#1A1B26",
-    sandevistan_yellow = "#F0E132",
+    sandevistan_yellow = "#F7D967",
     night_deep = "#0D0D15",
     neon = "#00F0FF",
     arasaka = "#FF003C",
@@ -16,7 +16,11 @@ M.colors = {
     pink_lucy = "#EC00F0",
     neon_david = "#00F5A0",
     green_david = "#81EC86",
+    deep_night="#100b16",
+    line_purple="#5d3f8c",
 }
+
+--"#F0E132"
 
 function M.get()
     return M.colors
